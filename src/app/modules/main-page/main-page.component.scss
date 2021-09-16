@@ -37,6 +37,52 @@
     }
 }
 
+.purchase {
+    padding: 30px 0;
+    text-align: center;
+    
+
+    &__title {
+        margin: 30px 0 30px;
+        font-size: 30px;
+    }
+
+    &__phrase {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    &__product {
+        margin-top: 20px 0;
+
+        &__phone-title {
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        &__table {
+            font-size: 15px;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+
+            &__name {
+                text-align: left;
+                padding: 20px 30px;
+            }
+
+            &__website {
+
+            }
+
+            &__phone {
+
+            }
+        }
+    }
+}
+
 .sign-up-button {
     margin-bottom: 30px;
     font-size: 12px;
