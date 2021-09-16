@@ -3,16 +3,21 @@
     <div class="benefits">
         <img [src]="devicePath" alt="Device">
         <div class="benefits__topics">
-            <h2>Your team always connected</h2>
+            <h3>Your team always connected</h3>
             <ul id="benefits-topics">
-                <li class="benefits__topics__phrase"><img [src]="correctIconPath" alt="Correct Icon">One on one and group meetings</li>
-                <li class="benefits__topics__phrase"><img [src]="correctIconPath" alt="Correct Icon">Record Meetings</li>
-                <li class="benefits__topics__phrase"><img [src]="correctIconPath" alt="Correct Icon">Screen share</li>
-                <li class="benefits__topics__phrase"><img [src]="correctIconPath" alt="Correct Icon">Share control over screens</li>
-                <li class="benefits__topics__phrase"><img [src]="correctIconPath" alt="Correct Icon">Schedule and send reminders</li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">One on one and group meetings</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Record Meetings</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Screen share</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Share control over screens</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Schedule and send reminders</span></li>
             </ul>
         </div>
-        
+    </div>
+
+    <div class="free-trial">
+        <h3 class="free-trial__title">Get a free trial</h3>
+        <p class="free-trial__phrase">See how Conneqt can solve your communication needs.<br>Start a trial now.</p>
+        <button class="sign-up-button">Sign Up For A Free Trial</button>
     </div>
 </div>
 <app-footer></app-footer>

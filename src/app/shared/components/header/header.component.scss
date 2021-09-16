@@ -17,17 +17,16 @@
                     position: absolute;
                     top: 40%;
                     margin-left: 40px;
-                    margin-bottom: 0;
 
                     &__font:first-child {
-                        margin-bottom: 0;
+                        margin-bottom: 10px;
                         font-family: "sans-serif";
                         font-size: 20px;
-                        
+                        font-weight: normal;
                     }
 
                     &__font{
-                        margin-bottom: 0;
+                        margin-bottom: 20px;
                         font-size: 70px;
                         font-weight: bold;
 
