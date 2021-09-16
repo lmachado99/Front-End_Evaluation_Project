@@ -1,0 +1,23 @@
+.middle {
+    padding: 50px 40px;
+}
+
+.benefits {
+    position: relative;
+    display: flex;
+
+    &__topics {
+        margin-left: 120px;
+
+        &__phrase {
+            padding: 0;
+            list-style-type: none;
+            margin: 20px 0;
+        }
+    }
+}
+
+#benefits-topics {
+    margin: 0;
+    padding: 0;
+}
