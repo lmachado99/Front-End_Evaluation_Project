@@ -61,23 +61,29 @@
         }
 
         &__table {
+            
             font-size: 15px;
             width: 700px;
             margin-left: auto;
             margin-right: auto;
-            border: 1px solid black;
+
+            &__topic {
+                padding-bottom: 1em;
+                border: 1px solid black;
+                
+            }
 
             &__name {
                 text-align: left;
-                padding: 20px 30px;
+                padding: 10px 30px;
             }
 
             &__website {
-
+                color: rgb(219, 86, 86);
             }
 
             &__phone {
-
+                padding: 10px 30px;
             }
         }
     }

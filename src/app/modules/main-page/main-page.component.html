@@ -24,15 +24,44 @@
         <h3 class="purchase__title">Or purchase a license</h3>
         <p class="purchase__phrase">Contact your local reseller to request a license trial or purchase Conneqt</p>
         <div class="purchase__product">
-            <h4 class="purchase__product__phone-title">Global Reseller</h4>
-            <table class="purchase__product__table">
-                <tr>
-                    <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                    <td class="purchase__product__table__website">Company Website</td>
-                    <td class="purchase__product__table__phone">469-844-8261</td>
-                </tr>
-            </table>
-            <h4 class="purchase__product__phone-title">Brazil</h4>
+            <div id="global-reseller">
+                <h4 class="purchase__product__phone-title">Global Reseller</h4>
+                <table class="purchase__product__table">
+                    <tr class="purchase__product__table__topic">
+                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="brazil">
+                <h4 class="purchase__product__phone-title">Brazil</h4>
+                <table class="purchase__product__table">
+                    <tr class="purchase__product__table__topic">
+                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr class="purchase__product__table__topic">
+                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr class="purchase__product__table__topic">
+                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr class="purchase__product__table__topic">
+                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
