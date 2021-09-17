@@ -42,16 +42,9 @@
 
                 &__image {
                     padding-left: 32px;
-                    max-width: 80px;
-                    max-height: 70px;
+                    // max-width: 80px;
+                    // max-height: 70px;
                     margin-bottom: 3px;
-                }
-                
-                &__title {
-                    color: #000000;
-                    font-size: 24px;
-                    font-weight: normal;
-                    display: inline-block;
                 }
             }
         }
@@ -60,7 +53,7 @@
             text-align: right;
             
             &__button {
-                margin: 3px 0 10px 0;
+                margin: 6px 0 14px 0;;
             }
 
             &__image {

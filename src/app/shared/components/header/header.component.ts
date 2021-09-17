@@ -8,13 +8,13 @@ import { Images } from 'src/assets/images/indice.enum';
 })
 export class HeaderComponent implements OnInit {
 
-  public logoPath: string;
+  public logoHeaderPath: string;
   public headerImagePath: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.logoPath = Images.logo;
+    this.logoHeaderPath = Images.logoHeader;
     this.headerImagePath = Images.headerImage;
   }
 
