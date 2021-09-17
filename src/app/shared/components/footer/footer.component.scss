@@ -1,0 +1,44 @@
+.footer {
+    background: #fc4848;
+    width: 100%;
+    padding: 50px 40px;
+    color: #FFFFFF;
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    width: 21%;
+    &__phrase {
+        padding-top: 30px;
+    }
+}
+
+.footer-component-links {
+    width: 25%;
+}
+
+.links {
+    margin-left: 50%;
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__topics {
+        padding: 0;
+        &__topic {
+            font-size: 14px;
+            margin: 10px 0;
+            list-style: none;
+        }
+    }
+}
+
+.contact {
+    width: 29%;
+
+    &__container {
+        margin-left: 40%;
+    }
+}

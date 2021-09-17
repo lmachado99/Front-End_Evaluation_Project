@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Images } from 'src/assets/images/indice.enum';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public logoFooterPath: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.logoFooterPath = Images.logoFooter;
   }
 
 }
