@@ -1,6 +1,6 @@
 export enum Images {
     logoHeader = 'assets/images/logo_header.png',
-    headerImage = 'assets/images/img_header.png',
+    bannerImage = 'assets/images/banner_image.png',
     device = 'assets/images/device.png',
     correctIcon = 'assets/images/correct_icon.png',
     linkIcon = 'assets/images/link_icon.png',

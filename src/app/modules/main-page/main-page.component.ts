@@ -8,6 +8,7 @@ import { Images } from 'src/assets/images/indice.enum';
 })
 export class MainPageComponent implements OnInit {
 
+  public bannerImagePath: string;
   public devicePath: string;
   public correctIconPath: string;
   public linkIconPath: string;
@@ -16,6 +17,7 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.bannerImagePath = Images.bannerImage;
     this.devicePath = Images.device;
     this.correctIconPath = Images.correctIcon;
     this.linkIconPath = Images.linkIcon;

@@ -1,5 +1,20 @@
 <app-header></app-header>
-<div class="middle">
+<div id="middle"> 
+    <div class="banner">
+        <div class="banner__left">
+            <div class="banner__left">
+                <div class="banner__left__position">
+                    <p class="banner__left__position__font">Making distances a meaningless thing</p>
+                    <h2 class="banner__left__position__font">we are <span id="red">conneqt</span></h2>
+                    <button class="sign-up-button">Sign Up For A Free Trial</button>
+                </div>
+            </div>
+        </div>
+        <div class="banner__right">
+            <img class="banner__right__image" [src]="bannerImagePath" alt="Banner Image">
+        </div>
+    </div>
+
     <div class="benefits">
         <img [src]="devicePath" alt="Device">
         <div class="benefits__topics">

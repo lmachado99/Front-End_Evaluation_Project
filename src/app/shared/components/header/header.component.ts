@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.logoHeaderPath = Images.logoHeader;
-    this.headerImagePath = Images.headerImage;
   }
 
 }

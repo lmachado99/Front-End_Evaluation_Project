@@ -3,88 +3,50 @@
         width: 100%;
         position: relative;
         display: flex;
-        margin-top: 10px;
 
         &__left  {
-            width: 100%;
-            &__phrase {
-                background-color: #f0f0f0;
-                height: 460px;
-                max-width: 700px;
-                max-height: 460px;
-
-                &__position {
-                    position: absolute;
-                    top: 40%;
-                    margin-left: 40px;
-
-                    &__font:first-child {
-                        margin-bottom: 10px;
-                        font-family: "sans-serif";
-                        font-size: 20px;
-                        font-weight: normal;
-                    }
-
-                    &__font{
-                        margin-bottom: 20px;
-                        font-size: 70px;
-                        font-weight: bold;
-
-                        #red {
-                            color: rgb(219, 86, 86);
-                        }
-                    }
-                }
-            }
+            width: 50%;
+            padding-top: 10px;
 
             &__logo {
                 margin-bottom: 10px;
 
                 &__image {
                     padding-left: 32px;
-                    // max-width: 80px;
-                    // max-height: 70px;
                     margin-bottom: 3px;
                 }
             }
         }
         
         &__right {
+            width: 50%;
             text-align: right;
+            padding-top: 18px;
             
             &__button {
-                margin: 6px 0 14px 0;;
-            }
+                margin-top: 6px;
+                
+                &__sign-up {
+                    background: #ff4500;
+                    color: #ffffff;
+                }
 
-            &__image {
-                width: 620px;
-                height: 460px;
+                &__login {
+                    background: #ffffff;
+                    color: #f35e28;
+                }
             }
         }
     }
 }
 
-.sign-up-button {
-    font-size: 12px;
-    font-family: "sans-serif";
-    font-weight: bold;
-    margin-right: 32px;
-    border-radius: 16px;
-    background: #ff4500;
-    color: #ffffff;
-    padding: 6px 12px;
-    border: none;
-}
-
-.login-button {
+.button {
     font-size: 12px;
     font-family: "sans-serif";
     font-weight: bold;
     margin-right: 32px;
     border-radius: 16px;  
-    background: #ffffff;
-    color: #f35e28;
     padding: 6px 12px;
     border: 1px solid #d8cdcd;
-    font-size: 12px;
+    font-size: 12px; 
 }

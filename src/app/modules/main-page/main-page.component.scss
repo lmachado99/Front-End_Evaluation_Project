@@ -1,8 +1,48 @@
-.middle {
-    padding: 50px 40px;
+.banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: #f0f0f0;
+
+    &__left  {
+        width: 50%;
+
+        &__position {
+            position: absolute;
+            margin: 10% 5%;
+
+            &__font:first-child {
+                margin-bottom: 10px;
+                font-family: "sans-serif";
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            &__font {
+                margin-bottom: 20px;
+                font-size: 70px;
+                font-weight: bold;
+                #red {
+                    color: rgb(219, 86, 86);
+                }
+            
+            }
+        }
+    }
+    
+    &__right {
+        text-align: right;
+        width: 50%;
+        
+        &__image {
+            width: 620px;
+            height: 460px;
+        }
+    }
 }
 
 .benefits {
+    padding: 50px 40px;
     position: relative;
     display: flex;
     padding-bottom: 50px;
