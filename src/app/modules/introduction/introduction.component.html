@@ -1,12 +1,10 @@
 <div id="home"> 
     <div class="banner">
         <div class="banner__left">
-            <div class="banner__left">
-                <div class="banner__left__position">
-                    <p class="banner__left__position__font">Making distances a meaningless thing</p>
-                    <h2 class="banner__left__position__font">we are <span id="red">conneqt</span></h2>
-                    <button class="sign-up-button" routerLink="/signup">Sign Up For A Free Trial</button>
-                </div>
+            <div class="banner__left__position">
+                <p class="banner__left__position__font">Making distances a meaningless thing.</p>
+                <h2 class="banner__left__position__font">we are <span id="red">conneqt</span></h2>
+                <button class="sign-up-button" routerLink="/signup">Sign Up For A Free Trial</button>
             </div>
         </div>
         <div class="banner__right">
@@ -15,15 +13,15 @@
     </div>
 
     <div class="benefits">
-        <img [src]="devicePath" alt="Device">
+        <img [src]="devicePath" alt="Device" class="benefits__image">
         <div class="benefits__topics">
-            <h3>Your team always connected</h3>
+            <h3 class="benefits__title">Your team always connected</h3>
             <ul id="benefits-topics">
-                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">One on one and group meetings</span></li>
-                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Record Meetings</span></li>
-                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Screen share</span></li>
-                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Share control over screens</span></li>
-                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon"><span class="benefits__topics__topic__phrase">Schedule and send reminders</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon" class="benefits__topics__topic__icon"><span class="benefits__topics__topic__phrase">One on one and group meetings</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon" class="benefits__topics__topic__icon"><span class="benefits__topics__topic__phrase">Record Meetings</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon" class="benefits__topics__topic__icon"><span class="benefits__topics__topic__phrase">Screen share</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon" class="benefits__topics__topic__icon"><span class="benefits__topics__topic__phrase">Share control over screens</span></li>
+                <li class="benefits__topics__topic"><img [src]="correctIconPath" alt="Correct Icon" class="benefits__topics__topic__icon"><span class="benefits__topics__topic__phrase">Schedule and send reminders</span></li>
             </ul>
         </div>
     </div>
@@ -34,7 +32,7 @@
         <button class="sign-up-button" routerLink="/signup">Sign Up For A Free Trial</button>
     </div>
 
-    <div class="purchase">
+    <div class="purchase"> 
         <h3 class="purchase__title">Or purchase a license</h3>
         <p class="purchase__phrase">Contact your local reseller to request a license trial or purchase Conneqt</p>
         <div class="purchase__product">
@@ -43,8 +41,8 @@
                 <table class="purchase__product__table">
                     <tr class="purchase__product__table__topic">
                         <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
-                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                        <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                 </table>
             </div>
@@ -53,26 +51,26 @@
                 <table class="purchase__product__table">
                     <tr class="purchase__product__table__topic">
                         <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
-                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                        <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
                         <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
-                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                        <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
                         <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
-                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                        <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
                         <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
-                        <td class="purchase__product__table__website">Company Website<img [src]="linkIconPath" alt="Link Icon"></td>
-                        <td class="purchase__product__table__phone"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</td>
+                        <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
+                        <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                 </table>
             </div>

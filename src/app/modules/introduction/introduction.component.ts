@@ -13,6 +13,7 @@ export class IntroductionComponent implements OnInit {
   public correctIconPath: string;
   public linkIconPath: string;
   public phoneIconPath: string;
+  public isMobile: boolean;
 
   constructor() { }
 
@@ -22,6 +23,10 @@ export class IntroductionComponent implements OnInit {
     this.correctIconPath = Images.correctIcon;
     this.linkIconPath = Images.linkIcon;
     this.phoneIconPath = Images.phoneIcon;
+
+    if (window.screen.width < 500) { // 768px portrait
+      this.isMobile = true;
+    }
   }
 
 }

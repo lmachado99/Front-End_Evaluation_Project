@@ -1,148 +1,291 @@
-.banner {
-    width: 100%;
-    position: relative;
-    display: flex;
-    background-color: #f0f0f0;
+@media screen and (min-width: 500px) {
+    .banner {
+        width: 100%;
+        position: relative;
+        display: flex;
+        background-color: #f0f0f0;
 
-    &__left  {
-        width: 50%;
+        &__left  {
+            width: 50%;
 
-        &__position {
-            position: absolute;
-            margin: 10% 5%;
+            &__position {
+                position: absolute;
+                margin: 10% 5%;
 
-            &__font:first-child {
-                margin-bottom: 10px;
-                font-family: "sans-serif";
+                &__font:first-child {
+                    margin-bottom: 10px;
+                    font-family: "sans-serif";
+                    font-size: 20px;
+                    font-weight: normal;
+                }
+
+                &__font {
+                    margin-bottom: 20px;
+                    font-size: 70px;
+                    font-weight: bold;
+                    #red {
+                        color: rgb(219, 86, 86);
+                    }
+                }
+            }
+        }
+        
+        &__right {
+            text-align: right;
+            width: 50%;
+            
+            &__image {
+                width: 620px;
+                height: 460px;
+            }
+        }
+    }
+
+    .benefits {
+        padding: 50px 40px;
+        position: relative;
+        display: flex;
+
+        &__topics {
+            margin-left: 120px;
+
+            &__topic {
+                margin: 20px 0;
+
+                &__phrase {
+                    margin-left: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .free-trial {
+        background-color: #f0f0f0;
+        padding: 30px 0;
+        text-align: center;
+
+        &__title {
+            margin: 30px 0 30px;
+            font-size: 50px;
+        }
+
+        &__phrase {
+            margin: 30px 0 30px;
+            font-size: 20px;
+        }
+    }
+
+    .purchase {
+        padding: 30px 0;
+        text-align: center;
+        
+
+        &__title {
+            margin: 30px 0 30px;
+            font-size: 30px;
+        }
+
+        &__phrase {
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+
+        &__product {
+            margin: 20px 0 30px;
+
+            &__phone-title {
+                padding: 20px 0;
                 font-size: 20px;
-                font-weight: normal;
             }
 
-            &__font {
-                margin-bottom: 20px;
-                font-size: 70px;
-                font-weight: bold;
-                #red {
+            &__table {
+                
+                font-size: 15px;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__topic {
+                    padding-bottom: 1em;
+                    border: 1px solid black;
+                    
+                }
+
+                &__name {
+                    text-align: left;
+                    padding: 10px 30px;
+                }
+
+                &__website {
+                    color: rgb(219, 86, 86);
+                }
+
+                &__phone {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+
+    .sign-up-button {
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-family: "sans-serif";
+        font-weight: bold;
+        margin-right: 32px;
+        border-radius: 16px;
+        background: #fc4848;
+        color: #ffffff;
+        padding: 6px 12px;
+        border: none;
+    }
+
+    #benefits-topics {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner {
+        width: 100%;
+        background-color: #f0f0f0;
+        text-align: center;
+
+        &__left  {
+
+            &__position {
+                padding: 10% 5%;
+
+                &__font:first-child {
+                    font-family: "sans-serif";
+                    font-size: 15px;
+                    font-weight: normal;
+                }
+
+                &__font {
+                    margin-bottom: 20px;
+                    font-size: 50px;
+                    font-weight: bold;
+                    #red {
+                        color: rgb(219, 86, 86);
+                    }
+                }
+            }
+        }
+        
+        &__right {
+            text-align: center;
+            
+            &__image {
+                width: 270px;
+            }
+        }
+    }
+
+    .benefits {
+        padding: 50px 40px;
+        position: relative;
+        display: flex;
+
+        &__image {
+            display: none;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__topics {
+
+            &__topic {
+                margin: 20px 0;
+
+                &__phrase {
+                    font-size: 15px;
+                }
+
+                &__icon {
+                    max-width: 20px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    .free-trial {
+        background-color: #f0f0f0;
+        padding: 30px 0;
+        text-align: center;
+
+        &__title {
+            margin: 30px;
+            font-size: 30px;
+        }
+
+        &__phrase {
+            margin: 30px;
+            font-size: 15px;
+        }
+    }
+
+    .purchase {
+        padding: 30px 0;
+        text-align: center;
+        
+
+        &__title {
+            margin: 30px;
+            font-size: 30px;
+        }
+
+        &__phrase {
+            display: none;
+        }
+
+        &__product {
+            margin: 20px 0 30px;
+
+            &__phone-title {
+                padding: 15px 0 5px;
+                font-size: 20px;
+            }
+
+            &__table {
+                font-size: 15px;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__topic {
+                    width:100%;
+                    padding: 10px 30px;
+                }
+
+                &__name {
+                    text-align: left;
+                    // padding: 10px 30px;
                     color: rgb(219, 86, 86);
                 }
             }
         }
     }
-    
-    &__right {
-        text-align: right;
-        width: 50%;
-        
-        &__image {
-            width: 620px;
-            height: 460px;
-        }
-    }
-}
 
-.benefits {
-    padding: 50px 40px;
-    position: relative;
-    display: flex;
-    padding-bottom: 50px;
-
-    &__topics {
-        margin-left: 120px;
-
-        &__topic {
-            margin: 20px 0;
-
-            &__phrase {
-                margin-left: 20px;
-                font-size: 20px;
-            }
-        }
-    }
-}
-
-.free-trial {
-    background-color: #f0f0f0;
-    padding: 30px 0;
-    text-align: center;
-
-    &__title {
-        margin: 30px 0 30px;
-        font-size: 50px;
+    .sign-up-button {
+        font-size: 12px;
+        font-family: "sans-serif";
+        font-weight: bold;
+        border-radius: 16px;
+        background: #fc4848;
+        color: #ffffff;
+        padding: 6px 12px;
+        border: none;
     }
 
-    &__phrase {
-        margin: 30px 0 30px;
-        font-size: 20px;
+    #benefits-topics {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-}
-
-.purchase {
-    padding: 30px 0;
-    text-align: center;
-    
-
-    &__title {
-        margin: 30px 0 30px;
-        font-size: 30px;
-    }
-
-    &__phrase {
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-
-    &__product {
-        margin: 20px 0 30px;
-
-        &__phone-title {
-            padding: 20px 0;
-            font-size: 20px;
-        }
-
-        &__table {
-            
-            font-size: 15px;
-            width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-
-            &__topic {
-                padding-bottom: 1em;
-                border: 1px solid black;
-                
-            }
-
-            &__name {
-                text-align: left;
-                padding: 10px 30px;
-            }
-
-            &__website {
-                color: rgb(219, 86, 86);
-            }
-
-            &__phone {
-                padding: 10px 30px;
-            }
-        }
-    }
-}
-
-.sign-up-button {
-    margin-bottom: 30px;
-    font-size: 12px;
-    font-family: "sans-serif";
-    font-weight: bold;
-    margin-right: 32px;
-    border-radius: 16px;
-    background: #fc4848;
-    color: #ffffff;
-    padding: 6px 12px;
-    border: none;
-}
-
-#benefits-topics {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
