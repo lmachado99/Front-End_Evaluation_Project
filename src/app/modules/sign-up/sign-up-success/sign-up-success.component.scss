@@ -1,0 +1,41 @@
+.signup-success {
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+    &__phrase {
+        line-height: 1.5;
+        color: #000000;
+        
+        font-weight: normal;
+
+        &__font:first-child {
+            padding: 40px 0 20px;
+            font-size: 54px;
+        }
+    
+        &__font {
+            padding: 20px 0 60px;
+            font-family: "sans-serif";
+            font-size: 35px;
+        }
+
+        &__paragraph {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__button {
+        margin-bottom: 14%;
+        font-size: 12px;
+        font-family: "sans-serif";
+        font-weight: bold;
+        border-radius: 16px;  
+        padding: 6px 12px;
+        border: 1px solid #d8cdcd;
+        font-size: 12px; 
+        background: #fc4848;
+        color: #ffffff;
+    }
+}
