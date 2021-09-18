@@ -1,0 +1,53 @@
+.signup {
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 20px;
+
+    &__phrase {
+        text-align: center;
+        font-weight: normal;
+
+        &__font:first-child {
+            padding: 40px 0 20px;
+            font-size: 54px;
+        }
+    
+        &__font {
+            padding: 20px 0 60px;
+            font-family: "sans-serif";
+            font-size: 35px;
+        }
+    }
+
+    &__fields {
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+
+        &__field {
+            margin-bottom: 25px;
+
+            &__input {
+                width: 30%;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                padding: 12px 20px;
+            }
+
+            &__button {
+                margin: 20px 0;
+                font-size: 12px;
+                font-family: "sans-serif";
+                font-weight: bold;
+                border-radius: 16px;  
+                padding: 6px 12px;
+                border: 1px solid #d8cdcd;
+                font-size: 12px; 
+                background: #fc4848;
+                color: #ffffff;
+            }
+        }
+    }
+}
