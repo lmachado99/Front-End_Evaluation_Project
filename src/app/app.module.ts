@@ -10,6 +10,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { IntroductionComponent } from './modules/introduction/introduction.component';
+import { MaintenanceComponent } from './shared/components/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IntroductionComponent } from './modules/introduction/introduction.compo
     SignUpSuccessComponent,
     HeaderComponent,
     FooterComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,

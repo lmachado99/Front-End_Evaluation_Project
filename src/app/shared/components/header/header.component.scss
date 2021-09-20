@@ -56,27 +56,6 @@
                 }
             }
         }
-        
-        &__right {
-            padding: 18px 45px;
-            text-align: center;
-            padding-top: 18px;
-            
-            &__button {
-                margin-top: 6px;
-                display: inline-grid;
-                
-                &__sign-up {
-                    background: #fc4848;
-                    color: #ffffff;
-                }
-
-                &__login {
-                    background: #ffffff;
-                    color: #fc4848;
-                }
-            }
-        }
     }
 }
 

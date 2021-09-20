@@ -10,11 +10,16 @@ export class HeaderComponent implements OnInit {
 
   public logoHeaderPath: string;
   public headerImagePath: string;
+  public isMobile: boolean;
 
   constructor() { }
 
   ngOnInit() {
     this.logoHeaderPath = Images.logoHeader;
+
+    if (window.screen.width < 500) {
+      this.isMobile = true;
+    }
   }
 
 }

@@ -24,7 +24,7 @@ export class IntroductionComponent implements OnInit {
     this.linkIconPath = Images.linkIcon;
     this.phoneIconPath = Images.phoneIcon;
 
-    if (window.screen.width < 500) { // 768px portrait
+    if (window.screen.width < 500) {
       this.isMobile = true;
     }
   }

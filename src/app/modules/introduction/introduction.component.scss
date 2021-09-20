@@ -24,7 +24,7 @@
                     font-size: 70px;
                     font-weight: bold;
                     #red {
-                        color: rgb(219, 86, 86);
+                        color: #fc4848;
                     }
                 }
             }
@@ -115,10 +115,14 @@
                 &__name {
                     text-align: left;
                     padding: 10px 30px;
+                    width: 330px;
                 }
 
                 &__website {
-                    color: rgb(219, 86, 86);
+                    display: flex;
+                    color: #fc4848;
+                    align-items: center;
+                    padding-top: 10px;
                 }
 
                 &__phone {
@@ -133,7 +137,6 @@
         font-size: 12px;
         font-family: "sans-serif";
         font-weight: bold;
-        margin-right: 32px;
         border-radius: 16px;
         background: #fc4848;
         color: #ffffff;
@@ -153,9 +156,11 @@
         width: 100%;
         background-color: #f0f0f0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
 
         &__left  {
-
+            order: 3;
             &__position {
                 padding: 10% 5%;
 
@@ -167,20 +172,21 @@
 
                 &__font {
                     margin-bottom: 20px;
-                    font-size: 50px;
+                    font-size: 40px;
                     font-weight: bold;
                     #red {
-                        color: rgb(219, 86, 86);
+                        color: #fc4848;
                     }
                 }
             }
         }
         
         &__right {
+            order: 2;
             text-align: center;
             
             &__image {
-                width: 270px;
+                width: 100%;
             }
         }
     }
@@ -255,8 +261,9 @@
 
             &__table {
                 font-size: 15px;
-                margin-left: auto;
-                margin-right: auto;
+                width: 80%;
+                margin-left: 40px;
+                margin-right: 40px;
 
                 &__topic {
                     width:100%;
@@ -264,9 +271,9 @@
                 }
 
                 &__name {
+                    width: 255px;
                     text-align: left;
-                    // padding: 10px 30px;
-                    color: rgb(219, 86, 86);
+                    color: #fc4848;
                 }
             }
         }
@@ -281,6 +288,20 @@
         color: #ffffff;
         padding: 6px 12px;
         border: none;
+    }
+
+    .login-button {
+        font-size: 12px;
+        font-family: "sans-serif";
+        font-weight: bold;
+        border-radius: 16px;  
+        padding: 6px 12px;
+        border: 1px solid #d8cdcd;
+        font-size: 12px; 
+        margin-top: 16px;
+        background: #ffffff;
+        color: #fc4848;
+        width: 186px;
     }
 
     #benefits-topics {

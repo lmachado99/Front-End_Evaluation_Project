@@ -4,10 +4,10 @@
             <a routerLink=""><img class="header__left__logo__image" [src]="logoHeaderPath" alt="Logo"></a>
         </div>
     </div>
-    <div class="header__right">
+    <div class="header__right" *ngIf="!isMobile">
         <div class="header__right__button">
             <button class="header__right__button__sign-up button" routerLink="/signup">Sign Up For A Free Trial</button>
-            <button class="header__right__button__login button">Login</button>
+            <button class="header__right__button__login button" routerLink="/maintenance">Login</button>
         </div>
     </div>
 </div>

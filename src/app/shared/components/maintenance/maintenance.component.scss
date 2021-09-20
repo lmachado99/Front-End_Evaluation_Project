@@ -1,0 +1,14 @@
+.maintenance {
+    text-align: center;
+    padding: 10% 5%;
+    background-color: #f0f0f0;
+    &__title {
+        font-size: 50px;
+    }
+
+    &__subtitle {
+        padding-top: 30px;
+        font-size: 30px;
+        color: #fc4848;
+    }
+}

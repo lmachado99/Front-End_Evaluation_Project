@@ -5,6 +5,7 @@
                 <p class="banner__left__position__font">Making distances a meaningless thing.</p>
                 <h2 class="banner__left__position__font">we are <span id="red">conneqt</span></h2>
                 <button class="sign-up-button" routerLink="/signup">Sign Up For A Free Trial</button>
+                <button *ngIf="isMobile" class="login-button" routerLink="/maintenance">Login</button>
             </div>
         </div>
         <div class="banner__right">
@@ -50,25 +51,25 @@
                 <h4 class="purchase__product__phone-title">Brazil</h4>
                 <table class="purchase__product__table">
                     <tr class="purchase__product__table__topic">
-                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__name">Ultratech Revendedora</td>
                         <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
                         <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
-                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__name">BlueFin</td>
                         <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
                         <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
-                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__name">Gold Comm Sistemas</td>
                         <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
                         <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>
                     <tr><td></td></tr>
                     <tr class="purchase__product__table__topic">
-                        <td class="purchase__product__table__name">John Appleseed - Authorized Reseller</td>
+                        <td class="purchase__product__table__name">Centraltek</td>
                         <td class="purchase__product__table__website"><div *ngIf="!isMobile">Company Website</div><img [src]="linkIconPath" alt="Link Icon"></td>
                         <td class="purchase__product__table__phone"><div *ngIf="!isMobile"><img [src]="phoneIconPath" alt="Phone Icon">469-844-8261</div></td>
                     </tr>

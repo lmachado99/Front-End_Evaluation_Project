@@ -54,6 +54,9 @@
     }
 
     .logo {
+        &__image {
+            text-align: center;
+        }
         &__phrase {
             padding: 30px 0;
         }
